@@ -24,8 +24,8 @@ for (int i = 0; i < NR_LENDEVE; i++) {
 return shuma / NR_LENDEVE;
 }
 ```
-
-Gjetja e studentit me mesataren më të lartë me **for-loop**.
+## Pjesa kryesore (main)
+Gjetja e studentit me **mesataren** më të lartë.
 ```cpp
  int indeksMaxMesatare = 0;
     for (int i = 1; i < NUM_STUDENTEVE; i++) {
@@ -47,6 +47,18 @@ Pjesa tjeter per gjetjen e indeksit **i**:
             if (studentet[i].notat[j] > studentet[maxNotaIndex[j]].notat[j]) {
                 maxNotaIndex[j] = i;
             }
+        }
+    }
+```
+Gjetja e studenteve qe **fitojn burse:**
+```cpp
+ int bursaFakulteti = 0, bursaShteti = 0;
+    for (int i = 0; i < NUM_STUDENTEVE; i++) {
+        if (studentet[i].mesatarja >= 8.0) {
+            bursaFakulteti++;
+        }
+        if (studentet[i].mesatarja >= 9.0) {
+            bursaShteti++;
         }
     }
 ```
