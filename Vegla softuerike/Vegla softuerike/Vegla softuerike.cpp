@@ -12,7 +12,13 @@ struct Student {
 };
 
 
-
+//Gjetja per mesataren me te larte:
+int indeksMaxMesatare = 0;
+for (int i = 1; i <= NR_LENDEVE; i++) {
+    if (studentet[i].mesatarja > studentet[indeksMaxMesatare].mesatarja) {
+        indeksMaxMesatare = i;
+    }
+}
 
 int main()
 {
