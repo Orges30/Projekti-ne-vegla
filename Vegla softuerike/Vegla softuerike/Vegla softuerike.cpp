@@ -13,6 +13,14 @@ struct Student {
     double mesatarja;
 };
 
+double llogaritMesataren(const Student& s){
+double shuma = 0;
+for (int i = 0; i < NR_LENDEVE; i++) {
+    shuma += s.notat[i];
+}
+return shuma / NR_LENDEVE;
+}
+
 
 int indeksMaxMesatare = 0;
 for (int i = 1; i <= NR_LENDEVE; i++) {
