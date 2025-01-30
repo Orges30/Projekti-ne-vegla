@@ -35,6 +35,7 @@ Gjetja e studentit me mesataren më të lartë me **for-loop**.
     }
 ```
 Gjetja e studentit me notën më të lartë **maxNotaIndex[j]** për secilën lëndë:
+
 Ruajtja indeksit te studentit me notën më të lartë
 ```cpp
  int maxNotaIndex[NR_LENDEVE] = { 0 };
