@@ -1,4 +1,5 @@
 # Projekti ne vegla
+---
 ## Pjesa hyrese
 **Fillimi:** Krijimi i Enum.
 ```cpp
@@ -24,6 +25,8 @@ for (int i = 0; i < NR_LENDEVE; i++) {
 return shuma / NR_LENDEVE;
 }
 ```
+---
+
 ## Pjesa kryesore (main)
 Gjetja e studentit me **mesataren** më të lartë.
 ```cpp
