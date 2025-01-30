@@ -3,6 +3,8 @@
 #include <string>
 using namespace std;
 
+enum Lendet { MATEMATIK, PROGRAMIM, VEGLAT_SOFTUERIKE, FIZIKE, NR_LENDEVE };
+
 struct Student {
     string emri;
     string mbiemri;
