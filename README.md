@@ -2,7 +2,7 @@
 ## Pjesa hyrese
 **Fillimi:** Krijimi i Enum.
 ```cpp
-enum Lendet { MATEMATIK, PROGRAMIM, VEGLAT_SOFTUERIKE, FIZIKE, NR_LENDEVE };
+enum Lendet { MATEMATIKE, PROGRAMIM, VEGLAT_SOFTUERIKE, FIZIKE, NR_LENDEVE };
 ```
 Krijimi i **Strukturave** te studentit.
 ```cpp
