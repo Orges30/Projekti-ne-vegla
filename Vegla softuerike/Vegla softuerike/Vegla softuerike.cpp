@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-enum Lendet { MATEMATIK, PROGRAMIM, VEGLAT_SOFTUERIKE, FIZIKE, NR_LENDEVE };
+enum Lendet { MATEMATIKE, PROGRAMIM, VEGLAT_SOFTUERIKE, FIZIKE, NR_LENDEVE };
 
 struct Student {
     string emri;
@@ -24,6 +24,7 @@ return shuma / NR_LENDEVE;
 
 int main()
 {
+    const int NUM_STUDENTEVE = 5;
     Student studentet[NUM_STUDENTEVE];
     int indeksMaxMesatare = 0;
     for (int i = 1; i <= NR_LENDEVE; i++) {
@@ -50,6 +51,14 @@ int main()
             bursaShteti++;
         }
     }
+   
+    int numriStudenteveMatematikeMbi7 = 0;
+    for (int i = 0; i < NUM_STUDENTEVE; i++) {
+        if (studentet[i].notat[MATEMATIKE] > 7) {
+            numriStudenteveMatematikeMbi7++;
+        }
+    }
+
 
     return 0;
 }
