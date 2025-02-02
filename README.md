@@ -63,3 +63,12 @@ Gjetja e studenteve qe **fitojn burse:**
         }
     }
 ```
+Gjetja e studenteve qe kane note me te larte se 7 ne **MATEMATIKE:**
+```cpp
+  int numriStudenteveMatematikeMbi7 = 0;
+    for (int i = 0; i < NUM_STUDENTEVE; i++) {
+        if (studentet[i].notat[MATEMATIKE] > 7) {
+            numriStudenteveMatematikeMbi7++;
+        }
+    }
+```
