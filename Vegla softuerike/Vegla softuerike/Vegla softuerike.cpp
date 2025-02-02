@@ -58,6 +58,16 @@ int main()
             numriStudenteveMatematikeMbi7++;
         }
     }
+   
+    
+    
+    
+    
+    
+    
+    cout << "\nNumri i studenteve qe kane noten mbi 7 ne Matematike: " << numriStudenteveMatematikeMbi7 << endl;
+
+    cout << "************************************************************\n";
 
 
     return 0;
