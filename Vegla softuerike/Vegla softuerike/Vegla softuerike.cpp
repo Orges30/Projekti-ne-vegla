@@ -26,6 +26,28 @@ int main()
 {
     const int NUM_STUDENTEVE = 5;
     Student studentet[NUM_STUDENTEVE];
+
+
+    for (int i = 0; i < NUM_STUDENTEVE; i++) {
+        cout << "------ Shkruani te dhenat per studentin " << i + 1 <<" ------\n\n";
+        cout << "Emri: ";
+        cin >> studentet[i].emri;
+        cout << "Mbiemri: ";
+        cin >> studentet[i].mbiemri;
+        cout << "ID: ";
+        cin >> studentet[i].id;
+        cout << endl;
+        cout << "Shkruani notat (Matematike, Programim, Vegla Softuerike, Fizike): "<<endl;
+        for (int j = 0; j < NR_LENDEVE; j++) {
+            cout << "Lenda " << j + 1 << " ka noten: ";
+            cin >> studentet[i].notat[j];
+        }
+        cout << "-----------------------------------------------------------\n";
+        studentet[i].mesatarja = llogaritMesataren(studentet[i]);
+        cout << endl;
+    }
+
+
     int indeksMaxMesatare = 0;
     for (int i = 1; i <= NR_LENDEVE; i++) {
         if (studentet[i].mesatarja > studentet[indeksMaxMesatare].mesatarja) {
