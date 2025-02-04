@@ -72,3 +72,16 @@ Gjetja e studenteve qe kane note me te larte se 7 ne **MATEMATIKE:**
         }
     }
 ```
+Shkruajtja e te dhenave te studenteve nga perdoruesi
+```cpp
+for (int i = 0; i < NUM_STUDENTEVE; i++) {
+        cout << "------ Shkruani te dhenat per studentin " << i + 1 <<" ------\n\n";
+        cout << "Emri: ";
+        cin >> studentet[i].emri;
+        cout << "Mbiemri: ";
+        cin >> studentet[i].mbiemri;
+        cout << "ID: ";
+        cin >> studentet[i].id;
+        cout << endl;
+        cout << "Shkruani notat (Matematike, Programim, Vegla Softuerike, Fizike): "<<endl;
+```
