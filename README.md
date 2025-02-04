@@ -72,7 +72,7 @@ Gjetja e studenteve qe kane note me te larte se 7 ne **MATEMATIKE:**
         }
     }
 ```
-Shkruajtja e te dhenave te studenteve nga perdoruesi
+**Shkruajtja e te dhenave** te studenteve nga perdoruesi
 ```cpp
 for (int i = 0; i < NUM_STUDENTEVE; i++) {
         cout << "------ Shkruani te dhenat per studentin " << i + 1 <<" ------\n\n";
@@ -85,7 +85,7 @@ for (int i = 0; i < NUM_STUDENTEVE; i++) {
         cout << endl;
         cout << "Shkruani notat (Matematike, Programim, Vegla Softuerike, Fizike): "<<endl;
 ```
-Vendosja e notave dhe llogaritja e notes mesatare
+Vendosja e notave dhe llogaritja e **notes mesatare**
 ```cpp
         for (int j = 0; j < NR_LENDEVE; j++) {
             cout << "Lenda " << j + 1 << " ka noten: ";
