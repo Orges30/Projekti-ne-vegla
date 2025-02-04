@@ -85,3 +85,12 @@ for (int i = 0; i < NUM_STUDENTEVE; i++) {
         cout << endl;
         cout << "Shkruani notat (Matematike, Programim, Vegla Softuerike, Fizike): "<<endl;
 ```
+Vendosja e notave dhe llogaritja e notes mesatare
+```cpp
+        for (int j = 0; j < NR_LENDEVE; j++) {
+            cout << "Lenda " << j + 1 << " ka noten: ";
+            cin >> studentet[i].notat[j];
+        }
+
+   
+```
