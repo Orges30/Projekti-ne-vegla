@@ -91,6 +91,10 @@ Vendosja e notave dhe llogaritja e notes mesatare
             cout << "Lenda " << j + 1 << " ka noten: ";
             cin >> studentet[i].notat[j];
         }
+     cout << "-----------------------------------------------------------\n";
+        studentet[i].mesatarja = llogaritMesataren(studentet[i]);
+        cout << endl;
+    }
 
    
 ```
