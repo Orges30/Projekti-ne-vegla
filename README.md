@@ -26,6 +26,30 @@ return shuma / NR_LENDEVE;
 ```
 ##
 ## Pjesa kryesore (main)
+**Shkruajtja e te dhenave** te studenteve nga perdoruesi
+```cpp
+for (int i = 0; i < NUM_STUDENTEVE; i++) {
+        cout << "------ Shkruani te dhenat per studentin " << i + 1 <<" ------\n\n";
+        cout << "Emri: ";
+        cin >> studentet[i].emri;
+        cout << "Mbiemri: ";
+        cin >> studentet[i].mbiemri;
+        cout << "ID: ";
+        cin >> studentet[i].id;
+        cout << endl;
+        cout << "Shkruani notat (Matematike, Programim, Vegla Softuerike, Fizike): "<<endl;
+```
+Vendosja e notave dhe llogaritja e **notes mesatare**
+```cpp
+        for (int j = 0; j < NR_LENDEVE; j++) {
+            cout << "Lenda " << j + 1 << " ka noten: ";
+            cin >> studentet[i].notat[j];
+        }
+     cout << "-----------------------------------------------------------\n";
+        studentet[i].mesatarja = llogaritMesataren(studentet[i]);
+        cout << endl;
+    }
+```
 Gjetja e studentit me **mesataren** më të lartë.
 ```cpp
  int indeksMaxMesatare = 0;
@@ -71,30 +95,4 @@ Gjetja e studenteve qe kane note me te larte se 7 ne **MATEMATIKE:**
             numriStudenteveMatematikeMbi7++;
         }
     }
-```
-**Shkruajtja e te dhenave** te studenteve nga perdoruesi
-```cpp
-for (int i = 0; i < NUM_STUDENTEVE; i++) {
-        cout << "------ Shkruani te dhenat per studentin " << i + 1 <<" ------\n\n";
-        cout << "Emri: ";
-        cin >> studentet[i].emri;
-        cout << "Mbiemri: ";
-        cin >> studentet[i].mbiemri;
-        cout << "ID: ";
-        cin >> studentet[i].id;
-        cout << endl;
-        cout << "Shkruani notat (Matematike, Programim, Vegla Softuerike, Fizike): "<<endl;
-```
-Vendosja e notave dhe llogaritja e **notes mesatare**
-```cpp
-        for (int j = 0; j < NR_LENDEVE; j++) {
-            cout << "Lenda " << j + 1 << " ka noten: ";
-            cin >> studentet[i].notat[j];
-        }
-     cout << "-----------------------------------------------------------\n";
-        studentet[i].mesatarja = llogaritMesataren(studentet[i]);
-        cout << endl;
-    }
-
-   
 ```
