@@ -96,3 +96,28 @@ Gjetja e studenteve qe kane note me te larte se 7 ne **MATEMATIKE:**
         }
     }
 ```
+Nxjerrja e rezultateve per studentet 
+```cpp
+cout << "\nStudenti me mesataren me te larte:\n";
+    cout << "Emri: " << studentet[indeksMaxMesatare].emri
+        << " " << studentet[indeksMaxMesatare].mbiemri
+        << " | ID: " << studentet[indeksMaxMesatare].id
+        << " | Mesatarja: " << fixed << setprecision(2) << studentet[indeksMaxMesatare].mesatarja << endl;
+
+    // Shfaqja e studentëve me notën më të lartë në secilën lëndë
+    string emratLendeve[] = { "Matematike", "Programim", "Vegla Softuerike", "Fizike" };
+    cout << "\nStudentet me noten me te larte ne secilen lende:\n";
+    for (int j = 0; j < NR_LENDEVE; j++) {
+        cout << emratLendeve[j] << ": "
+            << studentet[maxNotaIndex[j]].emri << " "
+            << studentet[maxNotaIndex[j]].mbiemri
+            << " me noten " << studentet[maxNotaIndex[j]].notat[j] << endl;
+    }
+
+
+    // Shfaqja e numrit të studentëve që marrin bursa
+    cout << "\nStudentet qe fitojne vetem bursen e fakultetit (mbi 8.0): " << bursaFakulteti - bursaShteti << endl;
+    cout << "Studentet qe fitojne bursen e fakultetit dhe ate te shtetit (mbi 9.0): " << bursaShteti << endl;
+```
+    
+    
